@@ -1,0 +1,5 @@
+font-family: 'Bitter', serif; - services-text
+font-family: 'Cormorant Upright', serif; -subtitles
+font-family: 'Gwendolyn', cursive; -logo
+font-family: 'Prompt', sans-serif; -main titles
+
