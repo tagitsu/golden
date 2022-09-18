@@ -2,7 +2,7 @@
 
 $main-color: rgb(254, 209, 70);
 $bg-color: rgb(247, 247, 247);
-$dork-font: rgb(34, 34, 34);
+$dark-font: rgb(34, 34, 34);
 
 $logo-font: 'Gwendolyn', cursive;
 $title-font: 'Prompt', sans-serif;
@@ -12,13 +12,13 @@ $serv-font: 'Bitter', serif;
 // general 
 * {
     box-sizing: border-box;
-    border: 1px solid;
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: $title-font;
+    color: $dark-font;
 }
 
 .container {
@@ -196,7 +196,6 @@ body {
         align-items: space-around;
         justify-content: space-between;
         gap: 20px;
-
     }
 }
 
@@ -204,13 +203,11 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 
     &__img {
         width: 23rem;
         height: 23rem;
     }
-
 
     &__pic {
         width: 100%;
@@ -231,7 +228,43 @@ body {
         font-style: italic;
         padding: 4px;
     }
+}
 
+// footer
+
+.footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    &__copyrights {
+        margin-left: 10%;
+    }
+
+    &__socials {
+        display: flex;
+        position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
+
+.social {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $dark-font;
+    display: grid;
+    margin: 0 5px;
+   
+}
+
+.fa-brands {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    margin: auto;
+    
 }
 
 
