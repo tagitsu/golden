@@ -14,6 +14,7 @@ $serv-font: 'Bitter', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    //border: 1px solid;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 .container {
     width: 100vw;
     display: grid;
-    grid-template-rows: 100vh 1fr 2fr 100px;
+    grid-template-rows: 100vh 1fr 2fr 200px;
 }
 
 .nav {
@@ -61,7 +62,7 @@ body {
 }
 
 .title {
-    margin: 40px auto;
+    margin: 80px auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -100,7 +101,11 @@ body {
         font-family: $logo-font;
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    &__brand {
         color: $main-color;
+        text-decoration: none;
     }
 
     &__intro {
@@ -172,10 +177,14 @@ body {
 
     &__title {
         margin: 10px;
+        font-size: 1.3rem;
     }
 
     &__text {
         margin: 10px;
+        font-family: $serv-font;
+        line-height: 2;
+        letter-spacing: 1px;
     }
 }
 
@@ -205,8 +214,8 @@ body {
     text-align: center;
 
     &__img {
-        width: 23rem;
-        height: 23rem;
+        width: calc(1920px * 0.2);
+        height: calc(1920px * 0.2);
     }
 
     &__pic {
@@ -219,14 +228,18 @@ body {
         font-family: $title-font;
         font-weight: 700;
         text-transform: capitalize;
-        padding: 4px;
+        padding-top: 20px;
+        font-size: 1.4rem;
+        background-color: white;
     }
 
     &__type {
         font-family: $subtitle-font;
         text-transform: capitalize;
         font-style: italic;
-        padding: 4px;
+        padding-bottom: 20px;
+        background-color: white;
+        font-size: 1.2rem;
     }
 }
 
@@ -264,8 +277,8 @@ body {
     color: white;
     font-size: 1.7rem;
     margin: auto;
-    
 }
+
 
 
 
