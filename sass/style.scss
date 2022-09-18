@@ -25,7 +25,7 @@ body {
     width: 100vw;
     //min-height: 100vh;
     display: grid;
-    grid-template-rows: 400px 400px 400px 40px;
+    grid-template-rows: 100vh 1fr 42fr 100px;
 }
 
 .nav {
@@ -38,7 +38,6 @@ body {
     }
 
     &__option {
-       // flex: 1;
         padding: 0 20px;
     }
 
@@ -53,7 +52,6 @@ body {
 .button {
     display: block;
     width: 300px;
-    //height: 60px;
     border-radius: 5px;
     background-color: $main-color;
     text-transform: uppercase;
@@ -61,6 +59,23 @@ body {
     font-size: 1rem;
     padding: 20px;
     color: white;
+}
+
+.title {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__title {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-family: $subtitle-font;
+        font-style: italic;
+    }
 }
 
 // splash
@@ -111,10 +126,66 @@ body {
         font-size: 4rem;
         text-transform: uppercase;
         margin-bottom: 40px;
-
     }
-    
+}
 
+// services
+
+.services {
+    display: grid;
+    grid-template-rows: 30% 70%;
+
+    &__wrapper {
+        margin: 50px 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__service {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__icon {
+        margin: 10px;
+        position: relative;
+        font-size: 2.5rem;
+        color: $main-color;
+
+
+        &::after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: calc(1.7*2.5rem);
+            height: calc(1.7*2.5rem);
+            border: 2px solid $main-color;
+            border-radius: 50%;
+            background-color: transparent;
+
+        }
+    }
+
+    &__title {
+        margin: 10px;
+    }
+
+    &__text {
+        margin: 10px;
+    }
+
+    
+}
+
+.fa-solid {
+    margin-top: 5px;
 }
 
 
