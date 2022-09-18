@@ -9,6 +9,115 @@ $title-font: 'Prompt', sans-serif;
 $subtitle-font: 'Cormorant Upright', serif;
 $serv-font: 'Bitter', serif;
 
+// general 
+* {
+    box-sizing: border-box;
+    border: 1px solid;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $title-font;
+}
+
+.container {
+    width: 100vw;
+    //min-height: 100vh;
+    display: grid;
+    grid-template-rows: 400px 400px 400px 40px;
+}
+
+.nav {
+
+    &__menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__option {
+       // flex: 1;
+        padding: 0 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+}
+
+.button {
+    display: block;
+    width: 300px;
+    //height: 60px;
+    border-radius: 5px;
+    background-color: $main-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 20px;
+    color: white;
+}
+
+// splash
+
+.splash {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    background: url(../images/header-photo.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    
+    &__top-bar {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        margin: 30px 40px;
+    }
+
+    &__logo {
+        margin: 0 40px;
+        font-family: $logo-font;
+        font-size: 1.5rem;
+        text-align: center;
+        color: $main-color;
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__greeting {
+        display: block;
+        font-family: $subtitle-font;
+        font-size: 3rem;
+        text-transform: capitalize;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    &__greeting-2 {
+        display: block;
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+    }
+    
+
+}
+
+
 
 
 
