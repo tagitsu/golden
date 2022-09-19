@@ -320,6 +320,34 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-rows: 100vh 1fr 1.3fr 200px;
+    }
+
+    .splash__top-bar {
+        grid-template-columns: 1fr 2fr;
+        justify-items: stretch;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .splash__greeting-2 {
+        font-size: 3.5rem;
+    }
+
+    .splash__greeting {
+        font-size: 2.5rem;
+    }
+
+    .services__wrapper {
+        flex-direction: column;
+    }
+}
+
+
+
 
 
 
