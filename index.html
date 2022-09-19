@@ -5,27 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>golden</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Cormorant+Upright&family=Gwendolyn:wght@700&family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="splash">
             <div class="splash__top-bar">
                 <div class="splash__logo">
-                    <p class="splash__brand">Golden</p>
+                    <a class="splash__brand" href="#">Golden</a>
                 </div>
                 <nav class="nav">
-                    <ul>
-                        <li class="nav__option"><a href="#">home</a></li>
-                        <li class="nav__option"><a href="#">services</a></li>
-                        <li class="nav__option"><a href="#">portfolio</a></li>
-                        <li class="nav__option"><a href="#">about</a></li>
-                        <li class="nav__option"><a href="#">contact</a></li>
+                    <ul class="nav__menu">
+                        <li class="nav__option">
+                            <a class="nav__link" href="#">home</a>
+                        </li>
+                        <li class="nav__option">
+                            <a class="nav__link" href="#">services</a>
+                        </li>
+                        <li class="nav__option">
+                            <a class="nav__link" href="#">portfolio</a>
+                        </li>
+                        <li class="nav__option">
+                            <a class="nav__link" href="#">about</a>
+                        </li>
+                        <li class="nav__option">
+                            <a class="nav__link" href="#">contact</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <div class="splash__intro">
-                <h1 class="splash__greeting">welcome to our studio!</h1>
+                <h1 class="splash__greeting">Welcome to our studio!</h1>
                 <h2 class="splash__greeting-2">it's nice to meet you</h2>
                 <a class="button" href="#">tell me more</a>
             </div>
@@ -37,18 +51,18 @@
             </div>
             <div class="services__wrapper">
                 <article class="services__service">
-                    <div class="services__icon"></div>
-                    <h4 class="services__title">E-commerce</h4>
+                    <div class="services__icon"><i class="fa-solid fa-basket-shopping"></i></div>
+                    <h4 class="services__title">E-Commerce</h4>
                     <p class="services__text">Donec ullamcorper ut turpis eget mollis. Praesent sed augue risus. Sed blandit iaculis laoreet. In dui felis, facilisis ut semper vel, consequat vitae tortor. Donec vel hendrerit metus.</p>
                 </article>
                 <article class="services__service">
-                    <div class="services__icon"></div>
-                    <h4 class="services__title">responsive web</h4>
+                    <div class="services__icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h4 class="services__title">Responsive Web</h4>
                     <p class="services__text">Donec ullamcorper ut turpis eget mollis. Praesent sed augue risus. Sed blandit iaculis laoreet. In dui felis, facilisis ut semper vel, consequat vitae tortor. Donec vel hendrerit metus.</p>
                 </article>
                 <article class="services__service">
-                    <div class="services__icon"></div>
-                    <h4 class="services__title">web security</h4>
+                    <div class="services__icon"><i class="fa-solid fa-lock"></i></div>
+                    <h4 class="services__title">Web Security</h4>
                     <p class="services__text">Donec ullamcorper ut turpis eget mollis. Praesent sed augue risus. Sed blandit iaculis laoreet. In dui felis, facilisis ut semper vel, consequat vitae tortor. Donec vel hendrerit metus.</p>
                 </article>
             </div>
@@ -61,42 +75,42 @@
             <div class="portfolio__wrapper">
                 <div class="card">
                     <div class="card__img">
-                        <img src="#" alt="">
+                        <img class="card__pic" src="images/01s.webp" alt="golden brand logo">
                     </div>
-                    <p class="card__product">ebony & ivory</p>
+                    <p class="card__product">ebony &amp; ivory</p>
                     <p class="card__type">branding</p>
                 </div>
                 <div class="card">
                     <div class="card__img">
-                        <img src="#" alt="">
+                        <img class="card__pic" src="images/02s.webp" alt="office supplies lying on a desk">
                     </div>
                     <p class="card__product">smart stationary</p>
                     <p class="card__type">print design</p>
                 </div>
                 <div class="card">
                     <div class="card__img">
-                        <img src="#" alt="">
+                        <img class="card__pic" src="images/03s.webp" alt="woman's holding a poster full of colourful abstract shapes">
                     </div>
                     <p class="card__product">clever poster</p>
                     <p class="card__type">print design</p>
                 </div>
                 <div class="card">
                     <div class="card__img">
-                        <img src="#" alt="">
+                        <img class="card__pic" src="images/04s.webp" alt="someone's holding blue vinyl record">
                     </div>
                     <p class="card__product">vinyl record</p>
                     <p class="card__type">product mock-up</p>
                 </div>
                 <div class="card">
                     <div class="card__img">
-                        <img src="#" alt="">
+                        <img class="card__pic" src="images/05s.webp" alt="design of website layout">
                     </div>
                     <p class="card__product">treehouse template</p>
                     <p class="card__type">web design</p>
                 </div>
                 <div class="card">
                     <div class="card__img">
-                        <img src="#" alt="">
+                        <img class="card__pic" src="images/06s.webp" alt="brand logo burnt in wood">
                     </div>
                     <p class="card__product">burned logo</p>
                     <p class="card__type">branding</p>
@@ -104,7 +118,7 @@
             </div>
         </section>
         <footer class="footer">
-            <p class="footer__copyrights">&COPY; Copyright 2014 FreebiesXpress.com</p>
+            <p class="footer__copyrights">&copy; Copyright 2014 FreebiesXpress.com</p>
             <div class="footer__socials">
                 <div class="social"><i class="fa-brands fa-twitter"></i></div>
                 <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
