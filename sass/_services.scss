@@ -1,0 +1,57 @@
+.services {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: stretch;
+
+    &__wrapper {
+        margin: 50px 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__service {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__icon {
+        margin: 10px;
+        position: relative;
+        font-size: 2.5rem;
+        color: $main-color;
+
+        &::after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: calc(1.7*2.5rem);
+            height: calc(1.7*2.5rem);
+            border: 2px solid $main-color;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+    }
+
+    &__icon-pic {
+        margin-top: 5px;
+    }
+
+    &__title {
+        margin: 10px;
+        font-size: 1.3rem;
+    }
+
+    &__text {
+        margin: 10px;
+        font-family: $serv-font;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+}

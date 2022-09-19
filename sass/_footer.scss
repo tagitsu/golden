@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    &__copyrights {
+        margin-left: 10%;
+    }
+
+    &__socials {
+        display: flex;
+        position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
+
+.social {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $dark-font;
+    display: grid;
+    margin: 0 5px;
+
+    &__icon {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        margin: auto;
+    }
+}
